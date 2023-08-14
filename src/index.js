@@ -2,12 +2,16 @@ import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
 import reportWebVitals from './reportWebVitals';
+// Importing the Bootstrap CSS
+import 'bootstrap/dist/css/bootstrap.min.css';
+//import page
+import Dashboard from './pages/Dashboard';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
-  <React.StrictMode>
-    
-  </React.StrictMode>
+  <>
+    <Dashboard/>
+  </>
 );
 
 // If you want to start measuring performance in your app, pass a function

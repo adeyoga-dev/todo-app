@@ -20,7 +20,7 @@ export default function Dashboard(){
     const decrease = () => {
         if (counter > 0) {
             setCounter(count => count - 1);
-          }
+        }
     };
     //reset counter
     const reset = () => {

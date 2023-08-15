@@ -4,13 +4,15 @@ import './index.css';
 import reportWebVitals from './reportWebVitals';
 // Importing the Bootstrap CSS
 import 'bootstrap/dist/css/bootstrap.min.css';
+import './style.css';
 //import page
-import Dashboard from './pages/Dashboard';
+//import Dashboard from './pages/dashboard';
+import TicTacToe from './pages/tictactoe';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <>
-    <Dashboard/>
+    <TicTacToe/>
   </>
 );
 

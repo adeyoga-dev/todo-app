@@ -1,4 +1,4 @@
-import React from 'react';
+import React,{useState} from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
 import reportWebVitals from './reportWebVitals';
@@ -6,13 +6,29 @@ import reportWebVitals from './reportWebVitals';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './style.css';
 //import page
-//import Dashboard from './pages/dashboard';
+import Counting from './pages/counting';
 import TicTacToe from './pages/tictactoe';
+
+function App() {
+  const [isTicTacToeVisible, setIsTicTacToeVisible] = useState(true);
+
+  const toggleView = () => {
+    setIsTicTacToeVisible(!isTicTacToeVisible);
+  };
+
+  return (
+    <div>
+      <button onClick={toggleView}>Toggle View</button>
+      {isTicTacToeVisible ? <TicTacToe /> : <Counting />}
+    </div>
+  );
+}
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <>
-    <TicTacToe/>
+
+    <App/>
   </>
 );
 

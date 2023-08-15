@@ -1,6 +1,6 @@
-import { useState } from 'react';
+import {useState} from 'react';
+
 function Square({value, onSquareClick }){
-    console.log(onSquareClick);
     return <button className="square" onClick={onSquareClick}>{value}</button>;
 }
 
